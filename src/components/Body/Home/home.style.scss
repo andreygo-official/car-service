@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.home-container {
+
+
+    .slide-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-end;
+        height: 700px;
+
+    }
+    .home-heading{
+        text-align: center;
+    }
+    .container {
+        position: relative;
+    }
+
+    .home-heading span {
+        color: white;
+        font-size: 8vw;
+    }
+
+    .heading {
+        font-family: "Roboto", serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .heading-bold {
+        font-family: "Roboto", serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    .home-info p {
+        font-size: 1.2vw;
+        color: white;
+        opacity: 0.9;
+    }
+
+    .background-image {
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        border: none;
+    }
+
+    .activeBtn,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 50px;
+
+    }
+
+
+    .active-btn {
+        background-color: rgb(65, 137, 179);
+    }
+
+    .about-us {
+        background-color: #424242;
+        color: white;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .about-us h1 {
+        font-size: 5rem;
+    }
+
+    .about-us p {
+        font-size: 1.2rem;
+        opacity: 0.5;
+        margin-top: 50px;
+    }
+
+    .btn-danger {
+        font-size: 20px;
+        border-radius: 0;
+        margin-top: 30px;
+        padding: 20px 40px 20px 40px;
+        font-weight: bold;
+    }
+
+    .grid-container img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .grid-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .item-two,
+    .item-one {
+        height: 100%;
+    }
+
+    .item-two {
+        background-color: red;
+    }
+
+    .item-two,
+    .item-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .item-two h1,
+    .item-three h1 {
+        font-size: 8vh;
+    }
+
+    .item-two p,
+    .item-three p {
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 50px;
+    }
+
+    .item-two h1,
+    .item-two p {
+        color: white;
+    }
+
+    .item-two .btn,
+    .item-three .btn {
+        font-size: 20px;
+        border-radius: 0;
+        margin-top: 30px;
+        padding: 20px 40px 20px 40px;
+        background-color: white;
+        border-color: white;
+        color: black;
+        border: none;
+        font-weight: bold;
+    }
+
+    .item-two .btn:hover,
+    .item-three .btn:hover {
+        background-color: rgb(229, 229, 229);
+    }
+
+    .item-two .btn:active .item-three .btn:active {
+        background-color: white !important;
+        border-color: white !important;
+        color: black !important;
+        box-shadow: none;
+    }
+
+    .item-three {
+        background-color: #424242;
+        color: white;
+    }
+
+    .advantages {
+        padding-left: 10px;
+        padding-bottom: 100px;
+    }
+
+    .advantages h1 {
+        text-align: center;
+        font-size: 4.5rem;
+        margin-top: 50px;
+    }
+
+    .car-part {
+        width: 100%;
+    }
+
+    .advantage-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .advantage-block div {
+        text-align: end;
+    }
+
+    .advantage-block img {
+        border: 2px solid rgb(185, 0, 0);
+        padding: 30px;
+        border-radius: 10%;
+    }
+
+    .advantages .row {
+        margin-top: 50px;
+    }
+
+    .advantages p {
+        font-size: 20px;
+    }
+
+    .btn-secondary {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        border-radius: 0;
+        margin-top: 30px;
+        padding: 20px 40px 20px 40px;
+        font-weight: bold;
+    }
+
+    .blurred-backdrop {
+        background-image: url(../../../Images/background-blurred.png);
+        background-size: cover;
+        filter: blur(5px);
+        height: 800px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+
+    .service-heading,
+    .contacts-heading {
+        padding-top: 100px;
+        font-size: 5rem;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+    }
+
+    .service-block {
+        margin-top: 50px;
+    }
+
+    .card {
+        background: none;
+        padding: 5px 10px 5px 10px;
+        border: none;
+        height: 100%;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        background-color: rgb(255, 0, 0, 0.7);
+        color: white;
+        transition: background-color 0.4s;
+    }
+
+    .card-body:hover {
+        background-color: rgb(113, 113, 113, 0.7);
+    }
+
+    .card-body h3 {
+        cursor: pointer;
+        transition: color 0.4s;
+        font-size: 35px;
+    }
+
+    .card-body h3:hover {
+        color: red;
+
+    }
+
+    .card-body p {
+        font-size: 19px;
+        text-align: start;
+        opacity: 0.7;
+    }
+
+    .clients-heading {
+        font-size: 5rem;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .person-icon {
+        width: 300px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 250px;
+    }
+
+    .image-block {
+        position: relative;
+        text-align: center;
+    }
+
+    .bi-quote {
+        position: absolute;
+        font-size: 80px;
+        color: red;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .feedback-container {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .carousel button {
+        background-color: rgb(0, 0, 0) !important;
+        width: 25px !important;
+        height: 25px !important;
+        border-radius: 100%;
+    }
+
+    .carousel .carousel-indicators .active {
+        background-color: red !important;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+
+    .carousel-indicators {
+        bottom: -20px;
+    }
+
+    .carousel-indicators button {
+        width: 15px;
+    }
+
+    .carousel-caption {
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .carousel-caption h3 {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .arrow-up {
+        color: white;
+        background-color: red;
+        width: fit-content;
+        padding: 10px 20px 10px 20px;
+        font-size: 20px;
+        position: fixed;
+        right: 2%;
+        bottom: -10%;
+        cursor: pointer;
+        display: none;
+        z-index: 2;
+    }
+
+    .arrow-forward {
+        animation: arrow-forward 1s forwards;
+
+    }
+
+    .arrow-reverse {
+        animation: arrow-reverse 1s reverse;
+
+    }
+
+    @keyframes arrow-forward {
+        0% {
+            bottom: -10%;
+            opacity: 0;
+        }
+
+        100% {
+            bottom: 2%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes arrow-reverse {
+        0% {
+            bottom: 2%;
+            opacity: 1;
+        }
+
+        100% {
+            bottom: -10%;
+            opacity: 0;
+        }
+    }
+
+    @media (max-width : 1200px) {
+        .card-body {
+            min-height: 300px;
+        }
+
+        .blurred-backdrop {
+            height: 1000px;
+        }
+
+        .person-icon {
+            margin-bottom: 270px;
+        }
+    }
+
+    @media (max-width : 992px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        .blurred-backdrop {
+            height: 1700px;
+        }
+
+        .person-icon {
+            margin-bottom: 300px;
+        }
+    }
+
+    @media (max-width : 768px) {
+        .about-us h1 {
+            font-size: 4rem;
+        }
+
+        .card-body {
+            min-height: 300px;
+        }
+
+        .advantage-block {
+            padding: 0px;
+        }
+
+        .home-heading span {
+            font-size: 10vw;
+        }
+
+        .home-info p {
+            font-size: 1.8vw;
+        }
+
+        .blurred-backdrop {
+            height: 3200px;
+        }
+
+        .person-icon {
+            margin-bottom: 350px;
+        }
+
+    }
+
+    @media (width <768px) {
+        .blurred-backdrop {
+            height: 3100px;
+        }
+
+        .services {
+            margin-bottom: 250px;
+        }
+
+    }
+}

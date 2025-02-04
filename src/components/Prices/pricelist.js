@@ -1,0 +1,23 @@
+export const priceList = [
+    { name: "Oil Change and Filter Replacement", price: 60, action: "MAKE AN APPOINTMENT" },
+    { name: "Brake Inspection and Repair", price: 120, action: "MAKE AN APPOINTMENT" },
+    { name: "Tire Rotation and Balancing", price: 54, action: "MAKE AN APPOINTMENT" },
+    { name: "Battery Testing and Replacement", price: 28, action: "MAKE AN APPOINTMENT" },
+    { name: "Engine Diagnostics", price: 80, action: "MAKE AN APPOINTMENT" },
+    { name: "Air Conditioning Service", price: 110, action: "MAKE AN APPOINTMENT" },
+    { name: "Transmission Fluid Change", price: 75, action: "MAKE AN APPOINTMENT" },
+    { name: "Wheel Alignment", price: 90, action: "MAKE AN APPOINTMENT" },
+    { name: "Headlight Restoration", price: 40, action: "MAKE AN APPOINTMENT" },
+    { name: "Exhaust System Repair", price: 150, action: "MAKE AN APPOINTMENT" },
+    { name: "Radiator Flush", price: 70, action: "MAKE AN APPOINTMENT" },
+    { name: "Suspension Inspection and Repair", price: 95, action: "MAKE AN APPOINTMENT" },
+    { name: "Fuel System Cleaning", price: 100, action: "MAKE AN APPOINTMENT" },
+    { name: "Spark Plug Replacement", price: 50, action: "MAKE AN APPOINTMENT" },
+    { name: "Complete Vehicle Inspection", price: 200, action: "MAKE AN APPOINTMENT" },
+    { name: "Timing Belt Replacement", price: 300, action: "MAKE AN APPOINTMENT" },
+    { name: "Cabin Air Filter Replacement", price: 45, action: "MAKE AN APPOINTMENT" },
+    { name: "Power Steering Fluid Service", price: 65, action: "MAKE AN APPOINTMENT" },
+    { name: "Brake Fluid Flush", price: 85, action: "MAKE AN APPOINTMENT" },
+    { name: "Coolant System Service", price: 90, action: "MAKE AN APPOINTMENT" },
+  ];
+  

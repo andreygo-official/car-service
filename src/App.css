@@ -1,0 +1,47 @@
+.arrow-up {
+        color: white;
+        background-color: red;
+        width: fit-content;
+        padding: 10px 20px 10px 20px;
+        font-size: 20px;
+        position: fixed;
+        right: 2%;
+        bottom: -10%;
+        cursor: pointer;
+        display: none;
+        z-index: 2;
+    }
+
+    .arrow-forward {
+        animation: arrow-forward 1s forwards;
+
+    }
+
+    .arrow-reverse {
+        animation: arrow-reverse 1s reverse;
+
+    }
+
+    @keyframes arrow-forward {
+        0% {
+            bottom: -10%;
+            opacity: 0;
+        }
+
+        100% {
+            bottom: 2%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes arrow-reverse {
+        0% {
+            bottom: 2%;
+            opacity: 1;
+        }
+
+        100% {
+            bottom: -10%;
+            opacity: 0;
+        }
+    }

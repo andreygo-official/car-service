@@ -1,0 +1,242 @@
+.header-container {
+
+    .car-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-logo {
+        text-decoration: none;
+        color: rgb(36, 69, 135);
+    }
+
+    .navbar {
+        background-color: rgb(230, 230, 230);
+    }
+
+    .logo-name {
+        font-size: 25px;
+        margin-left: 5px;
+    }
+
+    .main-logo>div {
+        display: flex;
+        align-items: center;
+    }
+
+    ul>li button {
+        margin-left: 10px;
+        font-size: 20px;
+        border: none;
+        background-color: rgb(230, 230, 230);
+        transition: 0.2s border ease-in-out;
+        border-bottom: 2px solid rgb(0, 0, 255, 0);
+    }
+
+    ul>li button:hover {
+        border-bottom: 2px solid blue;
+    }
+
+    button.active {
+        border-bottom: 2px solid blue;
+    }
+
+    .bi-cart {
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        color: rgb(36, 69, 135);
+    }
+
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        border: 1px solid #888;
+        width: 60%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    .modal-body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    .close {
+        color: red;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .shopping-cart {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .shopping-cart .bi-cart {
+        color: green;
+        cursor: auto;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .modal-header span {
+        font-size: 15px;
+        font-weight: bold;
+        color: gray;
+    }
+
+    .modal-footer {
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-warning {
+        border-radius: 0;
+        padding: 20px 40px 20px 40px;
+        font-weight: bold;
+        color: indigo;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        gap: 40px;
+    }
+
+    .item-img {
+        width: 100px;
+        height: 100%;
+    }
+
+    .increment-decrement span {
+        padding: 10px;
+    }
+
+    .increment-decrement button {
+        padding: 0 1vh;
+        text-decoration: none;
+        color: rgb(102, 102, 102);
+        border: none;
+        background-color: white;
+    }
+
+    .back-to-shop {
+        color: black;
+        font-weight: bold;
+        font-size: 17px;
+
+    }
+
+    .back-to-shop a {
+        text-decoration: none;
+        color: red;
+    }
+    .price{
+        font-weight: bold;
+    }
+    .total-price{
+        color: black;
+        align-self: flex-end;
+        margin-bottom: 30px;
+
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .bi-cart{
+        position: relative;
+    }
+    .cart-block{
+        position: relative;
+    }
+    .cart-length{
+        position: absolute;
+        right: -5px;
+        top: 2px;
+        background-color: green;
+        color: white;
+        border-radius: 100%;
+        padding: 1px 5px 1px 5px;
+        font-size: 10px;
+    }
+    @media (width <992px) {
+        .d-flex{
+            margin-left: 60px;
+        }
+
+    }
+
+}

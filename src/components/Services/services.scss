@@ -1,0 +1,238 @@
+.services-container {
+    .capabilities-container {
+        background-color: #424242;
+        color: white;
+        text-align: left;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .block-heading {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .heading {
+        font-family: "Roboto", serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .heading-bold {
+        font-family: "Roboto", serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    .working-moment-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-danger {
+        font-size: 20px;
+        border-radius: 0;
+        margin-top: 10px;
+        padding: 20px 40px 20px 40px;
+        font-weight: bold;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "text image";
+    }
+
+    .image-block {
+        grid-area: image;
+    }
+
+    .text-block {
+        grid-area: text;
+        background-color: red;
+        color: white;
+        height: 100%;
+    }
+
+    .text-block h2 {
+        text-align: center;
+    }
+
+    .image-block img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .offer-heading {
+        font-size: 3rem;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .points {
+        display: flex;
+        gap: 40px;
+        align-items: stretch;
+        height: 100%;
+        padding-bottom: 100px;
+
+    }
+
+    .first-point,
+    .second-point,
+    .third-point {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .points h2 {
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .first-heading {
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 100%;
+        width: fit-content;
+        padding: 10px 20px 10px 20px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .featured-services {
+        padding-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .featured-services .block-heading {
+        margin-bottom: 50px;
+    }
+
+    .accordion {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-info {
+        font-size: 2rem;
+        border-bottom: 1px solid black;
+        white-space: nowrap;
+        padding: 25px;
+        cursor: pointer;
+    }
+
+    .icon-info:first-child {
+        border-top: 1px solid black;
+    }
+
+    .icon-info span {
+        margin-left: 15px;
+    }
+
+    .info {
+        text-align: left;
+        padding-left: 40px;
+        opacity: 0;
+        transform: translateY(20px);
+        margin-top: 30px;
+    }
+
+    .info.visible {
+        transition: opacity 0.2s, transform 0.2s ease;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .car-maintenance {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .car-maintenance::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../Images/car-maintenance-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(10px) brightness(0.8);
+        z-index: -1;
+    }
+
+    .car-maintenance .block-heading {
+        color: white;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .maintenance-info img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .maintenance-text {
+        text-align: left;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    .maintenance-text p {
+        font-size: 17px;
+    }
+    .points p{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media (max-width : 992px) {
+        .grid-container {
+            grid-template-columns: 100%;
+            grid-template-areas:
+                "image"
+                "text";
+        }
+
+        .accordion {
+            flex-direction: column;
+        }
+
+        .text-block {
+            padding: 10px;
+        }
+
+        .icons {
+            width: 100%;
+        }
+    }
+
+    @media (max-width : 576px) {
+        .text-block {
+            padding: 10px;
+        }
+
+        .points {
+            flex-direction: column;
+        }
+    }
+
+}
