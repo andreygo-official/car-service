@@ -1,26 +1,28 @@
-# WeatherWisp 🌦️
+# Car Service App 🚗🔧
 
-**WeatherWisp** is a sleek and responsive weather application built using **React**. It provides accurate, real-time weather information, making it easy for users to stay updated on the latest weather conditions in their location or any city worldwide.
+The **Car Service App** is a responsive web application built using **React** and **Bootstrap**. This app is designed to streamline car maintenance and service tracking, making it easier for users to manage their vehicle's upkeep and service schedules efficiently.
 
 ---
 
 ## 🌟 Features
 
-- **Real-Time Weather Data**: Get the current temperature, weather conditions, and more.
-- **Search by City**: Search for weather information in any city worldwide.
-- **Dynamic Weather Icons**: Beautifully designed icons that dynamically represent the current weather.
-- **Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices.
-- **User-Friendly Interface**: Intuitive and minimalistic UI for a better user experience.
+- **Service Tracking**: Keep track of car service history, including dates, costs, and service details.
+- **Appointment Booking**: Schedule and manage service appointments with ease.
+- **Service Reminders**: Get timely reminders for upcoming services and maintenance checks.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices using Bootstrap.
+- **User-Friendly Interface**: Simple and intuitive design for effortless navigation.
 
 ---
 
 ## 🔧 Technologies Used
 
-The WeatherWisp app is built using modern web development tools and technologies:
+This project is built using the following tools and technologies:
 
-- **React**: For building dynamic user interfaces.
-- **CSS3**: For responsive styling and design.
-- **OpenWeatherMap API**: For fetching real-time weather data.
+- **React**: For building the dynamic and interactive UI.
+- **Bootstrap**: For styling and ensuring a responsive layout.
+- **JavaScript (ES6)**: For logic and interactivity.
+- **CSS3**: For additional styling.
+- **React Router**: For navigation between app pages.
 
 ---
 
@@ -28,7 +30,7 @@ The WeatherWisp app is built using modern web development tools and technologies
 
 ### Clone the Repository
 
-To set up WeatherWisp locally, clone this repository:
+To set up the Car Service App locally, clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weatherwisp.git
+git clone https://github.com/your-username/car-service-app.git
