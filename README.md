@@ -33,4 +33,4 @@ This project is built using the following tools and technologies:
 To set up the Car Service App locally, clone the repository:
 
 ```bash
-git clone https://github.com/your-username/car-service-app.git
+git clone https://github.com/andreygo-official/car-service-app.git
