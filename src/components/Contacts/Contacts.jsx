@@ -149,7 +149,7 @@ const Contacts = () => {
               <p className="error">{errors.textMessage?.message}</p>
             </div>
             <ReCAPTCHA
-              sitekey="6Le65skqAAAAAGdGJihOXWFDxjQsggaTs8PqMz9O"
+              sitekey="6LcZFNkqAAAAACMQEAgSXR4qQohxXCXfWJKRY4bA"
               onChange={(value) => setCapVal(value)}
             />
             <button
