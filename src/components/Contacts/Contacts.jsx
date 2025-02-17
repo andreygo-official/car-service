@@ -3,7 +3,6 @@ import { useForm, Controller } from "react-hook-form";
 import MaskedInput from "react-text-mask";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./contacts.scss";
-//6Le65skqAAAAAGdGJihOXWFDxjQsggaTs8PqMz9O
 const Contacts = () => {
   const { control, register, formState, handleSubmit, reset } = useForm({
     mode: "onBlur",
