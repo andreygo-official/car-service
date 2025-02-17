@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import MaskedInput from "react-text-mask";
-import ReCAPTCHA from "react-google-recaptcha";
 import "./contacts.scss";
 const Contacts = () => {
   const { control, register, formState, handleSubmit, reset } = useForm({
     mode: "onBlur",
   });
-  const [capVal, setCapVal] = useState(null)
   const { errors, isValid } = formState;
 
   const onSubmit = (data) => {
@@ -147,14 +145,10 @@ const Contacts = () => {
               />
               <p className="error">{errors.textMessage?.message}</p>
             </div>
-            <ReCAPTCHA
-              sitekey="6LcZFNkqAAAAACMQEAgSXR4qQohxXCXfWJKRY4bA"
-              onChange={(value) => setCapVal(value)}
-            />
             <button
               className="btn btn-danger"
               type="submit"
-              disabled={!isValid || !capVal}
+              disabled={!isValid}
             >
               SUBMIT
             </button>
